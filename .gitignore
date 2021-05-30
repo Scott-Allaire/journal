@@ -43,3 +43,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# More stuff
+.sass-cache
+*.css
+*.css.map

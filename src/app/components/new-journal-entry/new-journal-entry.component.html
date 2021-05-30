@@ -1,1 +1,11 @@
-<p>new-journal-entry works!</p>
+<mat-card>
+  <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="full-width-input" color="accent">
+<!--    <input type="text" placeholder="Entry Text" formControlName="text">-->
+        <textarea placeholder="Write a new entry" formControlName="text"
+                  rows="3" cols="50"
+                  matInput cdkTextareaAutosize autofocus></textarea>
+    </mat-form-field>
+    <button mat-button type="submit" [disabled]="!entryForm.valid">Save</button>
+  </form>
+</mat-card>

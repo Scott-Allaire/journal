@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {JournalEntry} from "../../model/journal-entry";
 
 @Component({
   selector: 'app-journal-entry',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./journal-entry.component.scss']
 })
 export class JournalEntryComponent implements OnInit {
+
+  @Input() entry: JournalEntry | undefined;
 
   constructor() { }
 

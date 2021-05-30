@@ -7,7 +7,8 @@
     "start:pwa": "http-server -p 8080 -c-1 dist/journal",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "clean": "rm -rf ./dist"
   },
   "private": true,
   "dependencies": {
